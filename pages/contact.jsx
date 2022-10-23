@@ -1,6 +1,5 @@
 import React from 'react'
 import { Map } from '../components'
-import { Facebook1 } from '../components/Facebook1';
 import Form from '../components/Form';
 
 const Contact = () => {
@@ -839,7 +838,6 @@ const Contact = () => {
           </div>
       </div>
 
-      { /**<Facebook1 /> **/}
     </section>
   )
 }

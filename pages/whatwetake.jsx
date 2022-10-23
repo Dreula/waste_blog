@@ -1,10 +1,10 @@
-import React, {useRef, useState, useEffect} from 'react'
+import React, {useRef} from 'react'
 import { Comments } from '../components/'
 import Link from 'next/link'
+import Image from 'next/image';
 
 const whatwetake = () => {
 
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const commentEl = useRef();
   const nameEl = useRef();
   const emailEl = useRef(); 
@@ -51,7 +51,7 @@ const whatwetake = () => {
     
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6 ">
               <a href="#!">
-                <img className="rounded-t-lg" src="1.png" alt=""/>
+                <Image className="rounded-t-lg" src="1.png" alt=""/>
               </a>
                 <div className="p-6">
                   <h5 className="block text-gray-900 text-xl font-medium mb-2">Plastics</h5>
@@ -70,7 +70,7 @@ const whatwetake = () => {
 
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6">
                   <a href="#!">
-                    <img className="rounded-t-lg" src="2.png" alt=""/>
+                    <Image className="rounded-t-lg" src="2.png" alt=""/>
                   </a>
               <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Glass</h5>
@@ -88,7 +88,7 @@ const whatwetake = () => {
           
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6">
                   <a href="#!">
-                    <img className="rounded-t-lg" src="3.png" alt=""/>
+                    <Image className="rounded-t-lg" src="3.png" alt=""/>
                   </a>
               <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Paper</h5>
@@ -105,7 +105,7 @@ const whatwetake = () => {
           
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6">
                   <a href="#!">
-                    <img className="rounded-t-lg" src="4.png" alt=""/>
+                    <Image className="rounded-t-lg" src="4.png" alt=""/>
                   </a>
               <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Metal</h5>
@@ -122,7 +122,7 @@ const whatwetake = () => {
 
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6">
                   <a href="#!">
-                    <img className="rounded-t-lg" src="5.png" alt=""/>
+                    <Image className="rounded-t-lg" src="5.png" alt=""/>
                   </a>
               <div className="p-6">
                   <h5 className="text-gray-900 text-large font-medium mb-2">Sanitary Napkin & Diaper</h5>
@@ -140,7 +140,7 @@ const whatwetake = () => {
           
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6">
                   <a href="#!">
-                    <img className="rounded-t-lg" src="6.png" alt=""/>
+                    <Image className="rounded-t-lg" src="6.png" alt=""/>
                   </a>
               <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Bricks</h5>
@@ -157,7 +157,7 @@ const whatwetake = () => {
         
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6">
                   <a href="#!">
-                    <img className="rounded-t-lg" src="7.png" alt=""/>
+                    <Image className="rounded-t-lg" src="7.png" alt=""/>
                   </a>
               <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">OrganicW</h5>
@@ -174,7 +174,7 @@ const whatwetake = () => {
 
           <div className="rounded-lg shadow-lg bg-white max-w-sm mb-6">
                   <a href="#!">
-                    <img className="rounded-t-lg" src="8.png" alt=""/>
+                    <Image className="rounded-t-lg" src="8.png" alt=""/>
                   </a>
               <div className="p-6">
                   <h5 className="text-gray-900 text-xl font-medium mb-2">Hazardous</h5>

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Schedule = () => {
   return (
-    <div class="flex">
-  <div class="">
+    <div className="flex">
+  <div className="">
     <div className='container mx-auto py-5'>
         <div className='text-2xl ml-5 font-bold'>
             Title

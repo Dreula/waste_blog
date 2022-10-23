@@ -1,6 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
+import Image from 'next/image';
 
 const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
@@ -29,7 +30,7 @@ const PostDetail = ({ post }) => {
         return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
       case 'image':
         return (
-          <img
+          <Image
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -46,7 +47,7 @@ const PostDetail = ({ post }) => {
   return (
     <div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
         <div className='relative overflow-hidden shadow-md mb-6'> 
-            <img 
+            <Image 
                 src={post.featuredImage.url}
                 alt={post.title}
                 className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg"
@@ -55,7 +56,7 @@ const PostDetail = ({ post }) => {
         <div className='px-4 lg:px-0'>
         <div className="flex items-center mb-8 w-full">
             <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8">
-              <img 
+              <Image 
                   alt={post.author.name}
                   height="30px"
                   width="30px"

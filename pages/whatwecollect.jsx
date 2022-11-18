@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const whatwecollect= () => {
+const Whatwecollect= () => {
   const [showModal, setShowModal] = useState(false);
   const [modal, setModal] =useState(0)
   const [title, setTitle] = useState('')
@@ -147,4 +147,4 @@ const whatwecollect= () => {
   )
 }
 
-export default whatwecollect
+export default Whatwecollect

@@ -1,50 +1,41 @@
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
 
 const About = () => {
   return (
-    <div className='container mx-auto px-10 mb-8'>
-      <div className="lg:flex sm:flex-row lg:justify-center">
-          <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg md:mb-2 mr-5">
-            <Image className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="ManuyoUno.jpg" alt="" />
-            <div className="p-6 flex flex-col justify-start">
-              <h5 className="text-gray-900 text-xl  text-center font-medium mb-2">MISSION</h5>
-              <p className="text-gray-700 text-base mb-4">
-                            Our system aims to implement a scheduling system to residents living along in Lopez Compound. 
-
-                            We also aim to introduce a better and systematic way of waste management disposal schedule in order to save the time and effort of people in Lopez Compound.
-
-                            We aim to make an informative website wherein people can be aware and their queries will be addressed as well with regards to waste management.
-
-                            We aim to promote events and gathering wherein the residents can actively participate in waste management activities such as recycling and other eco friendly projects.              </p>
-            </div>
-          </div>
-        
-          <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg md:mb-2 mr-4">
-            <Image className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="ManuyoUno.jpg" alt="" />
-            <div className="p-6 flex flex-col justify-start">
-              <h5 className="text-gray-900 text-xl  text-center font-medium mb-2">VISION</h5>
-              <p className="text-gray-700 text-base mb-4">
-              The researchers visualize that the system can help the residents of Manuyo Uno- Lopez Compound in many ways since it will provide them a more systematic and organize way of scheduling system in terms of garbage collection, an informative and interactive website, and encouragement for the residents to actively participate in waste management activities.              </p>
-            </div>
+    <div className='container mx-auto p-5'>
+        <div className="lg:py-16 py-5 bg-white rounded-md">  
+          <p className="md:hidden block pl-5 mt-0 sm:text-2xl text-medium text-gray-900 font-bold sm:pl-12">ABOUT US:</p>
+          <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+              <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+                <div className="md:5/12 lg:w-5/12 p-5">
+                  <Image 
+                    src="/ManuyoUno.jpg" 
+                    alt="Brgy. Manuyo Uno" 
+                    loading="lazy" 
+                    width='500px'
+                    height='700px'
+                    className='rounded-md md:hidden'
+                  />
+                </div>
+                <div className="md:7/12 lg:w-6/12">
+                  <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">MISSION</h2>
+                  <p className="mt-6 text-gray-600">Our system aims to implement a scheduling system to residents living along in Lopez Compound.  </p>
+                  <p className="mt-4 text-gray-600"> We also aim to introduce a better and systematic way of waste management disposal schedule in order to save the time and effort of people in Lopez Compound.</p>
+                  <p className="mt-4 text-gray-600">We aim to make an informative website wherein people can be aware and their queries will be addressed as well with regards to waste management.</p>
+                  <p className="mt-4 text-gray-600">We aim to promote events and gathering wherein the residents can actively participate in waste management activities such as recycling and other eco friendly projects. </p>
+                
+                  <h2 className="text-2xl mt-5 text-gray-900 font-bold md:text-4xl">VISSION</h2>
+                  <p className="mt-6 text-gray-600">The researchers visualize that the system can help the residents of Manuyo Uno- Lopez Compound in many ways since it will provide them a more systematic and organize way of scheduling system in terms of garbage collection, an informative and interactive website, and encouragement for the residents to actively participate in waste management activities.</p>
+                  
+                  <h2 className="text-2xl mt-5 text-gray-900 font-bold md:text-4xl">GOAL</h2>
+                  <p className="mt-6 text-gray-600"> We also aim to spread awareness about the current events with regards to waste management. With this, they can actively participate and collaborate in order to have a clean and green environment. </p>
+                </div>
+                
+              </div>
           </div>
         </div>
-
-          <div className="flex justify-center">
-             <div className="rounded-lg shadow-lg bg-white max-w-sm mb-5 mt-3">
-              <a href="#!">
-                <Image className="rounded-t-lg" src="brgylogo.png" alt=""/>
-              </a>
-              <div className="p-6">
-                <h5 className="text-gray-900 text-xl text-center font-medium mb-2">GOAL</h5>
-                <p className="text-gray-700 text-base mb-4">
-                Our goal is to make the life of the residents in Manuyo Uno-Lopez Compound better and easier when it comes to waste management in their community. We also aim to spread awareness about the current events with regards to waste management. With this, they can actively participate and collaborate in order to have a clean and green environment.
-                </p>
-              </div>
-            </div>
-         </div>
-</div>
-
+      </div>
 
   )
 }

@@ -37,8 +37,8 @@ const Footer = () => {
       </div>
       <div className="">
         <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-            <Link href="/whatwetake">
-                <a className="text-green-900">WHAT WE TAKE</a>
+            <Link href="/whatwecollect">
+                <a className="text-green-900">WHAT WE COLLECT</a>
             </Link>
         </h6>
         <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
@@ -56,7 +56,7 @@ const Footer = () => {
       <div>
         <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
           <Link href='/contact'>
-            Contact
+            Contact Information
           </Link>
         </h6>
         <p className="flex items-center justify-center md:justify-start mb-2">

@@ -11,7 +11,7 @@ const Contact = () => {
             <div className='w-full lg:w-1/2 xl:w-6/12 px-4'>
               <div className='w-full mb-12 lg:mb-0'>
                   <span className="block mb-4 text-green-900 font-semibold">
-                    Address:
+                    Site Map:
                   </span>
                   <Map/>
               </div>

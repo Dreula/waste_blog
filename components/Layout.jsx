@@ -7,7 +7,7 @@ const Layout = ({children}) => {
    <>
     <Header />
         {children}
-      {/* <Facebook1 />  */}
+      <Facebook1 /> 
     <Footer /> 
    </>
   )

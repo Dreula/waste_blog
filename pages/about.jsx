@@ -25,7 +25,7 @@ const About = () => {
                   <p className="mt-4 text-gray-600">We aim to make an informative website wherein people can be aware and their queries will be addressed as well with regards to waste management.</p>
                   <p className="mt-4 text-gray-600">We aim to promote events and gathering wherein the residents can actively participate in waste management activities such as recycling and other eco friendly projects. </p>
                 
-                  <h2 className="text-2xl mt-5 text-gray-900 font-bold md:text-4xl">VISSION</h2>
+                  <h2 className="text-2xl mt-5 text-gray-900 font-bold md:text-4xl">VISION</h2>
                   <p className="mt-6 text-gray-600">The researchers visualize that the system can help the residents of Manuyo Uno- Lopez Compound in many ways since it will provide them a more systematic and organize way of scheduling system in terms of garbage collection, an informative and interactive website, and encouragement for the residents to actively participate in waste management activities.</p>
                   
                   <h2 className="text-2xl mt-5 text-gray-900 font-bold md:text-4xl">GOAL</h2>

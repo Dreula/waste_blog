@@ -46,29 +46,36 @@ const Whatwecollect= () => {
   useEffect(() => {
     if(modal == 1) {
       setTitle('Plastics')
-      setDesc(' Mga Plastic Bottle na hindi nabebenta sa junkshop. Stick-O, Minola, Datu Puti, Mountain Dew, Assorted Crispy/Malulutong na Plastic,')
+      setDesc(' Mga Plastic Bottle na hindi nabebenta sa junkshop. Malulutong na Plastic. Supot sa pamimili ,Plastic wrap, Pambalot na film ng sigarilyo, Bagay na walang markang PET bottles, Palanggana / Basket o timba / Sipilyo ng ngipin')
     }
     if(modal == 2) {
       setTitle('Glass')
-      setDesc('Description ng Glass')
+      setDesc('Bote ng Alak, Bote ng Condiments, Baso, Plato, Mangkok, Vase, Tasa, Basag na Salamin, Bote ng pabango')
       
     }
     if(modal == 3) {
       setTitle('Paper')
-      setDesc('Description ng Paper')
-
+      setDesc('Mga uri ng papel: Repro, offset o pag-print ng papel, Satin o makintab na papel, Malagkit na papel, Pinahiran o pinahiran ng papel, Gulay o walang papel na papel, Craft paper, Cardboard, Papel, Karton, Recycled paper, Ecological o bio paper, Bond Paper, Tissue paper, Newsprint.')
     }
     if(modal == 4) {
       setTitle('Metal')
-      setDesc('Description ng Metal')
+      setDesc('Lata, Kalan, Gunting, Mga Parte ng Computer, Kandado, Tanikala, Kubyertos, Kutsilyo, Lagari, Gripo, Pako, Yero, Bakal na tubo')
     }
     if(modal == 5) {
       setTitle('Sanitary')
-      setDesc('Description ng Sanitary')
+      setDesc('Adult diaper, Baby diaper, Tampons, Mentrual napkin, Animal diaper.')
     }
     if(modal == 6) {
       setTitle('Bricks')
-      setDesc('Description ng Bricks')
+      setDesc('Hollow blocks, Tiles')
+    }
+    if(modal == 7) {
+      setTitle('Organic Waste')
+      setDesc('Mga Sirang pagkain, gulay, prutas o mga balat nito. Isda o Karne.')
+    }
+    if(modal == 8) {
+      setTitle('Hazardous')
+      setDesc('Baterya, Pintura, gamit na mantika, gasolina, rugby, varnish, bombilya, muriatic acid')
     }
   }, [modal])
 
@@ -76,6 +83,14 @@ const Whatwecollect= () => {
     setModal(modalId)
     setShowModal(true)
   }
+
+  function closeModal(){
+    setTitle('')
+    setDesc('')
+    setShowModal(false)
+  }
+   
+  
 
   return (
 
@@ -127,7 +142,7 @@ const Whatwecollect= () => {
                     <button
                       className="text-red-500 mx-auto background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => setShowModal(false)}
+                      onClick={closeModal}
                     >
                       Close
                     </button>
